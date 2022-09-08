@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: #E3F6FB;
+}
+
+
+header{
+    height: 80px;
+    background-color: #1D979E;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.logo{
+    justify-self: center;
+    align-self: center;
+}
+.menu{
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.menu>div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+.advantege{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #E3F6FB;
+    height: 900px;
+}
+
+.heading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #096C72;
+    justify-self: center;
+    align-self: center;
+    
+}
+.advanteges{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:1fr 1fr ;
+}
+
+.advanteges>p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #096C72;
+    justify-self: center;
+    align-self: center;
+}
+
+.doc{
+    height: 700px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.head{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #096C72;
+}
+.box1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+}
+.box1>p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #096C72;
+}
+
+.img{
+    justify-self: center;
+    align-self: center;
+    height: 394px;
+    width: 600px;
+    background: url("image/1.png") no-repeat;
+}
+
+.header_doc{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    
+    color: #096C72;
+    grid-column: 1/3;
+}
+.description_doc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 900px;
+}
+.aboute_doc1{
+    grid-row:2;
+    grid-column: 1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #096C72;
+    justify-self: center;
+    align-self: center;
+}
+.aboute_doc2{
+    grid-row:3;
+    grid-column: 2;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #096C72;
+    justify-self: center;
+    align-self: center;
+}
+.aboute_doc3{
+    grid-row:4;
+    grid-column: 1;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #096C72;
+    justify-self: center;
+    align-self: center;
+}
+.aboute_doc4{
+    grid-row:5;
+    grid-column: 2;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #096C72;
+    justify-self: center;
+    align-self: center;
+}
+
+.transport_doc{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.header_transport_doc{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    grid-column: 1/3;;
+    color: #096C72;
+}
+
+.text_transport_doc{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #096C72;
+    justify-self: center;
+    align-self: center;
+}
+
+.buttom_transport_doc{
+    width: 293px;
+    height: 56px;
+    left: 0px;
+    top: 0px;
+    
+    background: #FFFFFF;
+    border-radius: 30px;
+    
+}
+.text_buttom_transport_doc{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #096C72;
+    text-align: center;
+    text-justify: center;
+    padding-top: 15px;
+}
+
+/*консолидация грузов*/
+
+.consol_box{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
+}
+.consol_header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    
+    color: #096C72;
+    grid-column: 1/3;
+}
+.img_consol{
+    background: url("image/Otvetstvennoe-hranenie\ 1.png") no-repeat;
+    justify-self: center;
+    align-self: center;
+    height:392px ;
+    width: 677px;
+}
+.text_consol{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #247D83;
+    justify-self: center;
+    align-self: center;
+}
+
+/*страхование*/
+
+.insurance_box{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
+}
+.insurance_header{
+    grid-column: 1/3;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    
+    color: #096C72;
+}
+
+.insurance_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #096C72;
+    justify-self: center;
+    align-self: center;
+}
+
+/*о нас*/
+
+.about_us{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+}
+.about_us_header{
+    grid-column: 1/5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    
+    color: #096C72;
+}
+.box_about_us_many_text{
+    grid-column: 3/5;
+
+}
+
+.box_about_us_text{
+    grid-column: 1/3;
+    align-self: center;
+
+}
+
+/*контакты*/
+
+.contact_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.contact_header{
+    
+}
+
+
+
+
