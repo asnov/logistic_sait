@@ -109,10 +109,33 @@ header{
 
 }
 
+
+@media(max-width:576px){
+    .advanteges{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .heading{
+        background: none;
+
+    }
+    .heading_o{
+        font-size: 32px;
+    }
+    .advantege{
+        height: 1500px;
+        grid-template-rows: 1fr 50fr;
+    }
+}
+
+
+
 .doc{
     height: 700px;
     display: grid;
     grid-template-rows: 1fr 4fr;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .head{
     font-family: 'Inter';
@@ -122,13 +145,14 @@ header{
     line-height: 77px;
 
     color: #096C72;
-    margin-left: 100px;
+    
 }
 .box1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
     align-self: center;
+    grid-gap: 20px;
 }
 .box1>p{
     font-family: 'Inter';
@@ -150,6 +174,34 @@ header{
     background: url("image/1.png") no-repeat;
 }
 
+
+
+
+@media(max-width:819px){
+    .box1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    .doc{
+        height: 900px;
+    }
+}
+
+@media(max-width:721px){
+    .img{
+        background: url("image/small\ 1.png") no-repeat;
+        height: 208px;
+        width: 306px;
+    }
+}
+
+
+
+
+
+
+
+
 .header_doc{
     font-family: 'Inter';
     font-style: normal;
@@ -160,6 +212,7 @@ header{
     color: #096C72;
     grid-column: 1/3;
 }
+
 .description_doc{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -167,6 +220,15 @@ header{
     height: 900px;
     margin-left: 100px;
     margin-right: 100px;
+}
+@media(max-width:710px){
+    .description_doc{
+        height: 1400px;
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
 }
 .aboute_doc1{
     grid-row:2;
@@ -236,6 +298,11 @@ header{
     grid-gap: 30px;
     margin-left: 100px;
     margin-right: 100px;
+}
+@media(max-width:710px){
+    .transport_doc{
+        height: 900px;
+    }
 }
 .header_transport_doc{
     font-family: 'Inter';
@@ -326,6 +393,37 @@ header{
     align-self: center;
 }
 
+@media(max-width:1000px){
+    .consol_box{
+        grid-template-rows:1fr 3fr 2fr ;
+        grid-template-columns: 1fr;
+    }
+    .consol_header{
+        grid-column: 1;
+    }
+}
+
+
+@media(max-width:800px){
+    .consol_box{
+        grid-template-rows:1fr 1fr 1fr ;
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .img_consol{
+        background: url("image/small\ Otvetstvennoe-hranenie\ 1.png") no-repeat;
+        height:218px ;
+        width: 354px;
+    }
+}
+
+
+
+
+
+
+
 /*страхование*/
 
 .insurance_box{
@@ -405,6 +503,38 @@ header{
 
 }
 
+@media(max-width:1000px){
+    .about_us{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 2.5fr;
+    }
+    .about_us_header{
+        grid-column: 1/3;
+    }
+    .box_about_us_many_text{
+        grid-column: 1/3;
+
+    }
+    .box_about_us_text{
+        grid-column: 1/3;
+        
+    }
+    .box_about_us{
+        justify-self: center;
+        align-self: center;
+    }
+}
+@media(max-width:576px){
+    .about_us{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
 /*контакты*/
 
 .contact_box{
@@ -458,6 +588,9 @@ header{
     
     color: #096C72;
 }
+
+
+
 
 footer{
     text-align: center;
