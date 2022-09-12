@@ -878,8 +878,43 @@ footer {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 29px;
 
     color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.menu_footer a{
+    display: block;
+    padding: 5px;
+}
+.logo {
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text_logo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+.info_footer{
+    font-size: 12px;
+}
+@media(max-width:660px){
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
 }
