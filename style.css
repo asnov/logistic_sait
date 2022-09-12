@@ -7,6 +7,11 @@
 body {
     background-color: #E3F6FB;
 }
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    src: url(./Inter-Medium.ttf);
+}
 
 
 header {
@@ -34,23 +39,33 @@ header {
 
     color: #FFFFFF;
 }
+button{
+    text-decoration: none;
+    border: none;
+    background-color: #1D979E;
+    
+}
+.wrap_menu{
+    justify-self: center;
+    align-self: center;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
 
+}
 .menu {
     justify-self: center;
     align-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-}
-
-.menu > div {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #FFFFFF;
 }
 
 .advantage {
@@ -61,7 +76,7 @@ header {
 }
 
 .heading {
-    background: url("image/Rectangle\ 13.png") no-repeat;
+    background: url("image/Rectangle_13.png") no-repeat;
     height: 320px;
     width: 320px;
     justify-self: center;
@@ -130,6 +145,57 @@ header {
         height: 1500px;
         grid-template-rows: 1fr 50fr;
     }
+    /* выподающее меню*/
+    .dropbtn{
+        background: url(./image/dropdown.png) no-repeat;
+        color: black;
+        padding: 16px;
+        padding-left: 30px;
+        font-size: 16px;
+        border: none;
+        margin-right: 20px;
+    }
+    .wrap_menu{
+        position: relative;
+        display: inline-block;
+        justify-self: center;
+        align-self: center;
+        
+
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: aqua;
+        min-width: 140px;
+        box-shadow: 0px 8px 16px 0px #1D979E;
+        z-index: 1;
+        margin-top: 20px;
+        
+        
+        
+        
+    }
+    .menu a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        
+        
+    }
+    .menu a:hover{
+        background-color: #ddd;
+    }
+
+    .wrap_menu:hover .menu{
+        display: block;
+        
+    }
+    .wrap_menu:hover .dropbtn{
+        background:url(./image/dropdown_1.png) no-repeat;
+    }
+
 }
 
 
@@ -193,7 +259,7 @@ header {
 
 @media (max-width: 721px) {
     .img {
-        background: url("image/small\ 1.png") no-repeat;
+        background: url("image/small_1.png") no-repeat;
         height: 208px;
         width: 306px;
     }
@@ -351,8 +417,7 @@ header {
     line-height: 24px;
 
     color: #096C72;
-    text-align: center;
-    text-justify: center;   /* FIXME !!! */
+
     padding-top: 15px;
 }
 
@@ -379,7 +444,7 @@ header {
 }
 
 .img_consol {
-    background: url("image/Otvetstvennoe-hranenie\ 1.png") no-repeat;
+    background: url("image/Otvetstvennoe-hranenie_1.png") no-repeat;
     justify-self: center;
     align-self: center;
     height: 392px;
@@ -419,7 +484,7 @@ header {
     }
 
     .img_consol {
-        background: url("image/small\ Otvetstvennoe-hranenie\ 1.png") no-repeat;
+        background: url("image/small_Otvetstvennoe-hranenie_1.png") no-repeat;
         height: 218px;
         width: 354px;
     }
@@ -596,9 +661,7 @@ header {
 
 
 footer {
-    text-align: center;
-    text-justify: center;   /* FIXME !!! */
-    height: 80px;
+
     background-color: #1D979E;
     font-family: 'Inter';
     font-style: normal;
