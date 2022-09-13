@@ -86,9 +86,6 @@ a{
 }
 
 .heading {
-    background: url("image/Rectangle_13.png") no-repeat;
-    height: 320px;
-    width: 320px;
     justify-self: center;
     align-self: center;
     margin-left: 50px;
@@ -106,13 +103,7 @@ a{
     padding-right: 50px;
 }
 
-.rhombus {
-    left: 522px;
-    top: 324.81px;
 
-    background: #FFFFFF;
-    transform: rotate(-45deg);
-}
 
 .advantages {
     display: grid;
@@ -184,13 +175,10 @@ a{
         position: absolute;
         background-color: aqua;
         min-width: 140px;
-        box-shadow: 0px 8px 16px 0px #1D979E;
+        box-shadow: 0px 4px 6px 0px #1D979E;
         z-index: 1;
-        margin-top: 20px;
-        
-        
-        
-        
+        margin-top: 15px;
+        right:-40px;
     }
     .menu a{
         color: black;
